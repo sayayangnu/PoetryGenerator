@@ -20,24 +20,23 @@ This file builds a single-layer LSTM model to generate short poem sentences when
   c) Clean titles
 
 2. Process Data.  The data is processed as follows:
+      a) Poems are tokenizing with keras tokenizer by paragraph. Thus, a collection of poems turned into a list of tokens
 
-  a) Poems are tokenizing with keras tokenizer by paragraph. Thus, a collection of poems turned into a list of tokens
+      b) Each list of tokens is turned into a vector with the keras text_to_sequence function. Thus, a list of tokens turned into a list of vectors
   
-  b) Each list of tokens is turned into a vector with the keras text_to_sequence function. Thus, a list of tokens turned into a list of vectors
+    c) For each vector with n elements, use the 1 to n-1 element (feature) to predict the n element (target). Thus, a vector with n element will be converted to n-1 vectors of feature and target pairs. 
   
-  c) For each vector with n elements, use the 1 to n-1 element (feature) to predict the n element (target). Thus, a vector with n element will be converted to n-1 vectors of feature and target pairs. 
-  
-  d) Split the vectors got from step c) into features and target.
+    d) Split the vectors got from step c) into features and target.
   
   
 3. Build Model 
 The model used is LSTM (Long short-term memory), which is one type of RNN (recurrent neural network). The model structure is explianed as follows:
 
-  a) The vectors are first embedded into a dimention of 128 
-  
-  b) The embedded vectors are fed into a LSTM layer with 64 cells, with a Relu activation function
-  
-  c) The result from above is converted back to categories (representing texts) with a softmax layer 
+    a) The vectors are first embedded into a dimention of 128 
+
+    b) The embedded vectors are fed into a LSTM layer with 64 cells, with a Relu activation function
+
+    c) The result from above is converted back to categories (representing texts) with a softmax layer 
   
 The model uses Adam as an optimizer and an 'accuracy' metric keeps track of the model performance. 
 
@@ -46,11 +45,11 @@ The model uses Adam as an optimizer and an 'accuracy' metric keeps track of the 
 
 The model generates sentances when giving a) a begin word b) the length of the sentence. After training the model for 1437 epoch, the model's performance starts to converge. A sample sentence generated is as follows:
 
-Input: Night
+      Input: Night
 
-Length: 8 
+      Length: 8 
 
-Output: " Night was a wicked world having been tost " 
+      Output: " Night was a wicked world having been tost " 
 
 
 
