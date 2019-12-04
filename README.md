@@ -27,7 +27,7 @@ This file builds a single-layer LSTM model to generate short poem sentences when
   
   c) For each vector with n elements, use the 1 to n-1 element (feature) to predict the n element (target). Thus, a vector with n element will be converted to n-1 vectors of feature and target pairs. 
   
-  d) Split the vectors got from step c) into features and target
+  d) Split the vectors got from step c) into features and target.
   
   
 3. Build Model 
@@ -50,9 +50,7 @@ Input: Night
 
 Length: 8 
 
-Output: 
-
-  " Night was a wicked world having been tost " 
+Output: " Night was a wicked world having been tost " 
 
 
 
