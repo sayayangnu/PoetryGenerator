@@ -13,16 +13,16 @@ This file builds a single-layer LSTM model to generate short poem sentences when
 
 1. Gettng Input. The file web scrped the Don Juan collection from http://www.gutenberg.org/cache/epub/21700/pg21700.txt. The input raw text is pre-processed as follows:
 
-  a) Clean foreword and backwords
-  
-  b) Split into paragraphs
-  
-  c) Clean titles
+    a) Clean foreword and backwords
+
+    b) Split into paragraphs
+
+    c) Clean titles
 
 2. Process Data.  The data is processed as follows:
-      a) Poems are tokenizing with keras tokenizer by paragraph. Thus, a collection of poems turned into a list of tokens
+    a) Poems are tokenizing with keras tokenizer by paragraph. Thus, a collection of poems turned into a list of tokens
 
-      b) Each list of tokens is turned into a vector with the keras text_to_sequence function. Thus, a list of tokens turned into a list of vectors
+    b) Each list of tokens is turned into a vector with the keras text_to_sequence function. Thus, a list of tokens turned into a list of vectors
   
     c) For each vector with n elements, use the 1 to n-1 element (feature) to predict the n element (target). Thus, a vector with n element will be converted to n-1 vectors of feature and target pairs. 
   
