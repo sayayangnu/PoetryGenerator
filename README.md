@@ -59,18 +59,28 @@ Plot the accuracy vs. epochs plot and loss vs. epochs plot to observe the conver
 #### Section 2: CharRNN:
 #### File: 
 
-x. Analysis: 
-Plot the accuracy vs. epochs plot and loss vs. epochs plot to observe the converging rate of the model.
-![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/img/accuracy2.jpeg "CharRNN Accuracy vs. Epochs")
-![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/img/loss2.jpeg "CharRNN Loss vs. Epochs")
-
 
 1.The getting input and preprocessing part are partially the same of Single-Layer LSTM as mentioned above. Char-rnn also include spliting text data into character level. However, the data source has been broadened to contain the whole corpus.txt.
 
 2. Build model
  Here we use the strateful memory attribute in the LSTM to replace the normal one in model 1. We use dropout and 3 stack of 256 to enhance the performance.
+ 
+ The model structure is as followed:
+![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/img/CharRNN.jpeg "Model Structure")
 
+3. Compile
+The model uses Adam as an optimizer and an 'accuracy' metric keeps track of the model performance. 
 
+4. Ouput
+The model generates passages with costom-control length of character. 
+The inference process is like:
+a -> ap -> app -> appl -> apple -> apple  -> apple i -> apple is -> apple is  -> apple is s ..... apple is sweet
+
+5. Analysis: Accuracy / Loss vs. Epochs
+
+Plot the accuracy vs. epochs plot and loss vs. epochs plot to observe the converging rate of the model.
+![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/img/accuracy2.jpeg "CharRNN Accuracy vs. Epochs")
+![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/img/loss2.jpeg "CharRNN Loss vs. Epochs")
 
 
 
