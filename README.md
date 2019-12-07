@@ -4,7 +4,7 @@ This file should give the steps which will exactly reproduce the numbers, tables
 
 #### Data File: Wrangled Data: corpus.txt
   
-#### Code File 1: Data Preprocessing and Single-Layer LSTM: <Normal_LSTM.ipynb>
+#### Code File 1: Data Preprocessing and Single-Layer LSTM: Normal_LSTM.ipynb
 This file preprocesses the data and builds a single-layer LSTM model to generate short poem sentences when giving the begin word and the intended length of sentence. It follows the following steps: 
 
 
