@@ -51,7 +51,11 @@ The model generates sentances when giving a) a begin word b) the length of the s
       Output: " Night was a wicked world having been tost " 
 
 
+5. Analysis: Accuracy / Loss vs. Epochs
 
+Plot the accuracy vs. epochs plot and loss vs. epochs plot to observe the converging rate of the model.
+![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/accuracy1.PNG "SingleLSTM Accuracy vs. Epochs")
+![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/loss1.PNG "SingleLSTM Loss vs. Epochs")
 #### Code File 3: CharRNN: <filename.py>
 #### Code File 4: Perplexity: Perplexity.ipynb
 1. Use NLTK package to create n-gram models (n=1,2,3,4) based on the corpus (an n-gram list and n-gram frequency list); 
