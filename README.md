@@ -2,9 +2,8 @@
 
 This file should give the steps which will exactly reproduce the numbers, tables and figures in your report.
 
-#### Data File: Wrangled Data: corpus.txt
-  
-#### Code File 1: Data Preprocessing and Single-Layer LSTM: Normal_lstm.ipynb
+#### Section 1: Data Preprocessing and Single-Layer LSTM
+#### File: Normal_lstm.ipynb
 This file preprocesses the data and builds a single-layer LSTM model to generate short poem sentences when giving the begin word and the intended length of sentence. It follows the following steps: 
 
 
@@ -57,7 +56,8 @@ Plot the accuracy vs. epochs plot and loss vs. epochs plot to observe the conver
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/accuracy1.jpeg "SingleLSTM Accuracy vs. Epochs")
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/loss1.jpeg "SingleLSTM Loss vs. Epochs")
 
-#### Code File 2: CharRNN: Char_rnn.ipynb
+#### Section 2: CharRNN:
+#### File: 
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/CharRNN.jpeg "CharRNN Accuracy vs. Epochs")
 
 x. Analysis: 
@@ -65,7 +65,10 @@ Plot the accuracy vs. epochs plot and loss vs. epochs plot to observe the conver
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/accuracy2.jpeg "CharRNN Accuracy vs. Epochs")
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/loss2.jpeg "CharRNN Loss vs. Epochs")
 
-#### Code File 3: Perplexity: Perplexity.ipynb
+#### Section 3: Perplexity: 
+#### File: Perplexity.ipynb
+During this phase we evaluate the language models with perplexity. It follows the below steps:
+
 1. Use NLTK package to create n-gram models (n=1,2,3,4) based on the corpus (an n-gram list and n-gram frequency list); 
 
 2. Ngram_mle: Calculate the MLE on each n-gram; 
