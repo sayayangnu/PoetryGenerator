@@ -1,6 +1,6 @@
 # PoetryGenerator
 
-This file should give the steps which will exactly reproduce the numbers, tables and figures in your report.
+Limin Chen, Xinyue Liu, Tianyi Yang, Ju Huang
 
 #### Section 1: Data Preprocessing and Single-Layer LSTM
 #### Folder : Normal_lstm
