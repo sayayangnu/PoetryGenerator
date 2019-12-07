@@ -4,7 +4,7 @@ This file should give the steps which will exactly reproduce the numbers, tables
 
 #### Data File: Wrangled Data: corpus.txt
   
-#### Code File 1: Data Preprocessing and Single-Layer LSTM: <filename.py>
+#### Code File 1: Data Preprocessing and Single-Layer LSTM: <Normal_LSTM.ipynb>
 This file preprocesses the data and builds a single-layer LSTM model to generate short poem sentences when giving the begin word and the intended length of sentence. It follows the following steps: 
 
 
@@ -40,7 +40,7 @@ The model used is LSTM (Long short-term memory), which is one type of RNN (recur
 The model uses Adam as an optimizer and an 'accuracy' metric keeps track of the model performance. 
 
 
-4. Output: 
+4. Output
 
 The model generates sentances when giving a) a begin word b) the length of the sentence. After training the model for 1437 epoch, the model's performance starts to converge. A sample sentence generated is as follows:
 
@@ -56,8 +56,8 @@ The model generates sentances when giving a) a begin word b) the length of the s
 Plot the accuracy vs. epochs plot and loss vs. epochs plot to observe the converging rate of the model.
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/accuracy1.jpeg "SingleLSTM Accuracy vs. Epochs")
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/loss1.jpeg "SingleLSTM Loss vs. Epochs")
-#### Code File 3: CharRNN: <filename.py>
-#### Code File 4: Perplexity: Perplexity.ipynb
+#### Code File 2: CharRNN: <filename.py>
+#### Code File 3: Perplexity: Perplexity.ipynb
 1. Use NLTK package to create n-gram models (n=1,2,3,4) based on the corpus (an n-gram list and n-gram frequency list); 
 
 2. Ngram_mle: Calculate the MLE on each n-gram; 
