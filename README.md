@@ -89,12 +89,30 @@ The model generates passages with costom-control length of character.
 The inference process is like:
 a -> ap -> app -> appl -> apple -> apple  -> apple i -> apple is -> apple is  -> apple is s ..... apple is sweet
 
+
+Output demo:
+
+'Mast again all in light:
+  The shakens my palsian gloom
+  And many thought of mellow fields or a lesson tops and claimone
+  Its glass their faces first looked when a kin cruelty, and croaked.
+  We gazing their spares sang out of by this point,
+  And standing in her hope?
+  Modest My fairy boy is worlds
+  Of birds gentle Lambralebbur-dissial,
+    And soil to link upon behind me paw or joys.
+  Shall parise us strives the wealthy unquirtel? Misery,
+  Where else have draws we come not.
+
+
 5. Analysis: Accuracy / Loss vs. Epochs
 
 Plot the accuracy vs. epochs plot and loss vs. epochs plot to observe the converging rate of the model.
 
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/img/accuracy2.jpeg "CharRNN Accuracy vs. Epochs")
 ![alt text](https://github.com/sayayangnu/PoetryGenerator/blob/master/img/loss2.jpeg "CharRNN Loss vs. Epochs")
+
+
 
 
 
