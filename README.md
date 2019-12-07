@@ -2,24 +2,23 @@
 
 This file should give the steps which will exactly reproduce the numbers, tables and figures in your report.
 
-#### Data File: Wrangled Data: <filename1>, corpus_CGR.txt
+#### Data File: Wrangled Data: corpus.txt
   
-#### Code File 1: Data Preprocessing: <filename1.py>, <filename2.py>
-NO PROPROCESSING FILE IS NEEDED
-
-#### Code File 2: Single-Layer LSTM: <filename.py>
-This file builds a single-layer LSTM model to generate short poem sentences when giving the begin word and the intended length of sentence. It follows the following steps: 
+#### Code File 1: Data Preprocessing and Single-Layer LSTM: <filename.py>
+This file preprocesses the data and builds a single-layer LSTM model to generate short poem sentences when giving the begin word and the intended length of sentence. It follows the following steps: 
 
 
-1. Gettng Input. The file web scrped the Don Juan collection from http://www.gutenberg.org/cache/epub/21700/pg21700.txt. The input raw text is pre-processed as follows:
+1. Gettng Input. The input raw text is pre-processed as follows:
 
     a) Clean foreword and backwords
 
     b) Split into paragraphs
 
     c) Clean titles
+    
+    d) Output the cleaned poetry collection file: **corpus.txt**
 
-2. Process Data.  The data is processed as follows:
+2. Process Data.  For this model, we scraped Don Juan collection from http://www.gutenberg.org/cache/epub/21700/pg21700.txt and preprocessed it. Then we processed the data as follows:
     a) Poems are tokenizing with keras tokenizer by paragraph. Thus, a collection of poems turned into a list of tokens
 
     b) Each list of tokens is turned into a vector with the keras text_to_sequence function. Thus, a list of tokens turned into a list of vectors
